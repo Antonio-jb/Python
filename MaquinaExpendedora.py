@@ -23,3 +23,62 @@ reservaMonedas = [20, 20, 20, 20, 20]
 
 nombreProductos = ["Agua 💧","Refresco 🥤","Zumo 🥃"]
 precioProductos = [0.50, 0.75, 0.95]
+
+
+def printMenu(nombres, precios):
+    if len(nombres) != len(precios):
+        return False
+
+    textoMenu = "Bienvenido \n"
+    for i in range(len(nombres)):
+        textoMenu += f"{i + 1} - {nombres[i]} : {precios[i]}\n"
+    textoMenu += f"{len(nombres) + 1} - Salir"
+    print(textoMenu)
+
+
+def elegirProducto(productos):
+    opcion = input("Elija una opción => ")
+    numerosProductos = []
+    for i in range(len(productos)):
+        numerosProductos.append(str(i + 1))
+
+    while opcion not in numerosProductos:
+        opcion = input("Elija una opcion correcta => ")
+    return int(opcion) - 1
+
+
+def ingresarImporte(opcion):
+    precio = precioProductos(opcion)
+    importeUsuario = 0
+    monedasIntroducidas = []
+    while importeUsuario < precio:
+        print(f"Le queda {round(precio - importeUsuario, 2)} por ingresar.")
+        moneda = ingresarMoneda()
+        importeUsuario += moneda
+        monedasIntroducidas.append(moneda)
+    if importeUsuario > precio:
+        resto = importeUsuario - precio
+
+        entregarProducto(nombreProductos[opcion])
+        sumarMonedas(monedasIntroducidas)
+
+
+def entregarProducto(nombre):
+    print(f"Aqui tiene su {nombre}")
+
+
+def sumarMonedas(monedas):
+    for moneda in monedas:
+        reservaMonedas[valoresMonedas.index(moneda)]
+
+
+def ingresarMoneda():
+    valoresValidos = []
+
+
+printMenu(nombreProductos, precioProductos)
+opcion = elegirProducto(nombreProductos)
+if opcion == len(nombreProductos) + 1:
+    print("Gracias por venir")
+else:
+    ingresarImporte(opcion)
