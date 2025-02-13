@@ -114,7 +114,7 @@ def ejecutarMaquina():
 
         if opcion is None:
             mostrarTotalDinero()
-            print("¡Gracias por su visita.!")
+            print("\n¡Gracias por su visita.!")
             break
         else:
             ingresarImporte(opcion)
