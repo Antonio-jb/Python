@@ -21,13 +21,12 @@ matriz = [
 tabla = []
 
 for i in range(10):
-    fila = []
+    tabla.append([])
     for j in range(10):
         if i % 2 == 0:
-            fila.append(1)
+            tabla[i].append(0)
         else:
-            fila.append(0)
-    tabla.append(fila)
+            tabla[i].append(1)
 
 
 for fila in tabla:
