@@ -30,10 +30,10 @@ barajaJugador = []
 def baraja_nueva():
     for palo in palos:
         for i in range(2, 11):
-            baraja.append(Carta(i, palo, f"{i} de {palo}"))
+            baraja.append(Carta(i, f"{i} de {palo}", palo,))
 
         for letra in letras:
-            baraja.append(Carta(letra, palo, f"{letra} de {palo}"))
+            baraja.append(Carta(letra, f"{letra} de {palo}", palo,))
 
 def barajear(baraja):
     random.shuffle(baraja)
