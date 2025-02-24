@@ -1,0 +1,15 @@
+{
+  "idReceta": "1",
+  "nombreReceta": "Lasaña",
+  "tiempoPreparacion": 120,
+  "ingredientes": [
+    {
+      "idIngrediente": "123",
+      "nombreIngrediente": "Carne"
+    },
+    {
+      "idIngrediente": "456",
+      "nombreIngrediente": "queso"
+    }
+  ]
+}
