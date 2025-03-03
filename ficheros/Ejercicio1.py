@@ -36,8 +36,8 @@ diccionarioConListas = {
     "curtido": ["adj. experimentado", "adj. El Salv. renegrido (II de color negruzco)."],
     "legumbre": ["f. Fruto o semilla que se cria ne vainas."]
 }
-
-print(diccionario["curtido"][1])
+#
+# print(diccionario["curtido"][1])
 
 palabraNueva = input("Introduzca una palabra nueva o escriba 'exit'\n")
 while palabraNueva != "exit":
@@ -46,7 +46,7 @@ while palabraNueva != "exit":
     palabraNueva = input("Introduzca una palabra nueva o escriba 'exit'\n")
 
 with open("diccionario", "w") as file:
-json.dump(diccionarioConListas, file, indent=4)
+    json.dump(diccionarioConListas, file, indent=4)
 
 busqueda = input("¿Qué palabra quiere buscar?")
 if busqueda in diccionarioConListas:
