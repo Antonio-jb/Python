@@ -39,20 +39,3 @@ diccionarioConListas = {
 #
 # print(diccionario["curtido"][1])
 
-palabraNueva = input("Introduzca una palabra nueva o escriba 'exit'\n")
-while palabraNueva != "exit":
-    deficion = input("Introduzca su definición:\n")
-    diccionarioConListas[palabraNueva] = [deficion]
-    palabraNueva = input("Introduzca una palabra nueva o escriba 'exit'\n")
-
-with open("diccionario", "w") as file:
-    json.dump(diccionarioConListas, file, indent=4)
-
-busqueda = input("¿Qué palabra quiere buscar?")
-if busqueda in diccionarioConListas:
-    cont = 1
-for acepcion in diccionarioConListas [busqueda]:
-    print("{cont}: {acepcion}")
-    cont += 1
-else:
-    print("No está en el diccionario.")

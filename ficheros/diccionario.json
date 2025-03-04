@@ -1,0 +1,11 @@
+{
+    "mesa": [
+        "Objeto donde se suele comer."
+    ],
+    "silla": [
+        "Objeto donde sentarse."
+    ],
+    "tenedor": [
+        "Un cubierto"
+    ]
+}
