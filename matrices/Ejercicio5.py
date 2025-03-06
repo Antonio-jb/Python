@@ -1,3 +1,11 @@
+"""
+Diseñar programa Java, que:
+a) Crea una tabla bidimensional de longitud 5x5 y nombre 'matriz'.
+b) Carga la tabla con valores numéricos enteros.
+c) Suma todos los elementos de cada fila y todos los elementos de cada columna
+visualizando los resultados en pantalla.
+"""
+
 # Crear una matriz 5x5
 matriz = []
 

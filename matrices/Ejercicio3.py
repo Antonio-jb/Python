@@ -1,3 +1,9 @@
+"""
+Visualizar la matriz transpuesta de la anterior. Si la matriz es cuadrada (tiene igual
+número de filas y de columnas) visualice también los elementos de la diagonal
+principal.
+"""
+
 # Matriz inicial
 matriz = [
     [3, 2, 5, 0, 9],

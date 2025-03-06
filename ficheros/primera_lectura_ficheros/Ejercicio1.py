@@ -22,10 +22,10 @@ print(lectura)
 
 def crearFichero():
     try:
-        with open("diccionario.json", "x") as file:
+        with open("../directorio_ejercicio1/fichero_ejemplo1.json", "x") as file:
             return json.load(file)
     except FileExistsError:
-        with open("diccionario.json", "r") as file:
+        with open("../directorio_ejercicio1/fichero_ejemplo1.json", "r") as file:
             return json.load(file)
 
 creacion = crearFichero()

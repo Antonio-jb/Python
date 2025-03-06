@@ -1,3 +1,9 @@
+"""
+Crear un diccionario que permita al usuario introducir las palabras y sus definiciones.
+
+Luego permitir al usuario poder buscar una palabar y su significado en el diccionario.
+"""
+
 import json
 
 diccionarioConListas = {}

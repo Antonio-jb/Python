@@ -1,3 +1,13 @@
+"""
+Crear una tabla de dos dimensiones, cuyo contenido serán las potencias de 2. La
+primera columna de la tabla nos indicara el exponente (positivo o negativo) y la
+segunda columna su valor.
+
+El tamaño de la tabla será 20x2.
+Se pedirá que el usuario introduzca los valores de las potencias que quiere visualizar
+hasta que al introducir la potencia se introduzca un -1000.
+"""
+
 # Crear tabla de potencias de 2
 tabla = []
 print("Introduce exponentes para calcular las potencias de 2 (introduce -1000 para salir):")

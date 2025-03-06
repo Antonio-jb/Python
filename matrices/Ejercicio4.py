@@ -1,3 +1,9 @@
+"""
+Se captura por teclado los valores de una matriz de 4 x 4. Deseamos saber si es una
+matriz identidad. Es aquella que en la diagonal posee el valor 1 y en el resto de las
+posiciones tiene el valor 0.
+"""
+
 # Función para verificar matriz identidad
 def es_identidad(matriz):
     for i in range(len(matriz)):

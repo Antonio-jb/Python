@@ -1,3 +1,10 @@
+"""
+Cargar desde teclado un array con las notas de las 3 asignaturas de cada uno de los 15
+alumnos de una clase. Cada fila contendrá los datos de una asignatura y cada columna
+la nota de un alumno determinado. Visualizar la nota media de cada alumno, la nota
+media de cada asignatura y la nota media de la clase.
+"""
+
 # Datos: 3 asignaturas x 15 alumnos
 notas = []
 print("Introduce las notas de cada asignatura para 15 alumnos:")

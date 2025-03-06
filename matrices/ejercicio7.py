@@ -1,3 +1,13 @@
+"""
+Realizar un programa Java que:
+a. Llene un array bidimensional con las notas numéricas de cada estudiante en las
+clases de un profesor, se supone que el profesor tiene 3 clases diferentes y un
+máximo de 30 alumnos por clase.
+b. Visualice el array.
+c. Calcule la nota máxima y mínima visualizando a que alumno y grupo pertenece, en
+caso de que estas notas se repitan se visualizan todas.
+"""
+
 # Llenar array bidimensional con notas de estudiantes
 clases = 3
 alumnos = 5  # Puedes cambiar este número (máximo 30)
